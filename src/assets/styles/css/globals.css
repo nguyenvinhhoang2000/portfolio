@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --transparent: transparent;
+  --background-1: #ffffff;
+
+  --primary-1: #f0f6ff;
+  --primary-2: #edf3ff;
+  --primary-3: #c4d7ff;
+  --primary-4: #9cb8ff;
+  --primary-5: #7396ff;
+  --primary-6: #4870fa;
+  --primary-7: #3350d4;
+  --primary-8: #2136ad;
+  --primary-9: #132087;
+  --primary-10: #0d1461;
+
+  --neutral-2: #fafafa;
+  --neutral-4: #f0f0f0;
+  --neutral-5: #d9d9d9;
+  --neutral-6: #bfbfbf;
+
+  --character-secondary-45: rgba(0, 0, 0, 0.45);
+  --character-primary-85: rgba(0, 0, 0, 0.85);
+  --character-disabled-placeholder-25: rgba(0, 0, 0, 0.25);
+
+  /* --documentation-section: radial-gradient(
+    70.71% 70.71% at 50% 50%,
+    #d8a722 0%,
+    #fff 82%
+  ); */
+
+  --character-danger: #f97071;
+  --character-success: #40d97d;
+
+  /*Z-INDEX VARIABLE*/
+  --index-bg-documentation-section: -1;
+  --overlay-modal: rgba(0, 0, 0, 0.45);
+  --z-modal-overlay: 11;
+}
+
+html,
+body,
+:root {
+  color: var(--character-primary-85);
+  font-size: 14px;
+}
+
+@media (min-width: theme("screens.xl")) {
+  html,
+  :root {
+    font-size: 16px;
+  }
+}
